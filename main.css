@@ -1,0 +1,39 @@
+/* General styles for the navbar */
+.navbar {
+    background-color: #20201f; /* Dark background color */
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo styling */
+.nav-logo {
+    height: 40px;
+}
+
+/* Container for the nav links */
+.navbar-nav {
+    display: flex;
+    gap: 30px;
+}
+
+/* Styling each navigation link */
+.nav-link {
+    color: #b1afb2; /* Soft purple color for links */
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* Active link styling */
+.nav-link.active {
+    color: #b1afb2; /* Ensures active link is the same color */
+}
+
+/* Hover effect for links */
+.nav-link:hover {
+    color: #c5c9e7; /* Lighter shade on hover */
+}
