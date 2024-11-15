@@ -15,7 +15,9 @@
 /* Container for the nav links */
 .navbar-nav {
     display: flex;
-    gap: 30px;
+    flex-direction: row; /* Aligns links horizontally */
+    gap: 30px; /* Space between links */
+    text-align: right;
 }
 
 /* Styling each navigation link */
