@@ -1,3 +1,84 @@
+/* Importing Fonts (optional, if not already loaded) */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Merriweather:wght@900&display=swap');
+
+/* General Body Font Styles */
+body {
+  font-family: 'Lato', sans-serif; /* Font for body text */
+  font-size: 18px; /* Body text size */
+  font-weight: 400; /* Regular weight */
+  line-height: 1.6; /* Adjust for readability */
+  color: #333; /* Default text color */
+  margin: 0;
+  padding: 0;
+}
+
+/* Heading 1 (H1) */
+h1 {
+  font-family: 'Merriweather', serif; /* Font for H1 */
+  font-size: 68px; /* 68pt size */
+  font-weight: 900; /* Black thickness */
+  color: #000; /* Default color for heading */
+  margin: 0.5em 0;
+}
+
+/* Heading 2 (H2) */
+h2 {
+  font-family: 'Merriweather', serif;
+  font-size: 55px; /* 55pt size */
+  font-weight: 900; /* Black thickness */
+  color: #424080;
+  margin: 0.5em 0;
+}
+
+/* Heading 3 (H3) */
+h3 {
+  font-family: 'Merriweather', serif;
+  font-size: 44px; /* 44pt size */
+  font-weight: 900; /* Black thickness */
+  color: #424080;
+  margin: 0.5em 0;
+}
+
+/* Heading 4 (H4) */
+h4 {
+  font-family: 'Lato', sans-serif; /* Font for H4 */
+  font-size: 35px; /* 35pt size */
+  font-weight: 900; /* Black thickness */
+  color: #715C9B;
+  margin: 0.5em 0;
+}
+
+/* Heading 5 (H5) */
+h5 {
+  font-family: 'Lato', sans-serif;
+  font-size: 29px; /* 29pt size */
+  font-weight: 900; /* Black thickness */
+  color: #715C9B;
+  margin: 0.5em 0;
+}
+
+/* Paragraphs (Body Text) */
+p {
+  font-family: 'Lato', sans-serif;
+  font-size: 18px; /* 18pt size */
+  font-weight: 400; /* Regular weight */
+  color: #20201F;
+  line-height: 1.6;
+  margin: 0.5em 0;
+}
+
+footer p {
+    color: #C5C9E7;
+  }
+
+h5.footer-subtitle {
+    color: #715C9B;
+}
+
+
+
+
+/* NAV BAR */ 
 /* General styles for the navbar */
 .navbar {
     background-color: #20201f; /* Dark background color */
@@ -9,7 +90,8 @@
 
 /* Logo styling */
 .nav-logo {
-    height: 40px;
+    height: 40pt;
+    align-items: right;
 }
 
 /* Container for the nav links */
@@ -18,6 +100,7 @@
     flex-direction: row; /* Aligns links horizontally */
     gap: 30px; /* Space between links */
     text-align: right;
+    margin-left: auto; /* Pushes the navbar-nav to the right */
 }
 
 /* Styling each navigation link */
@@ -37,5 +120,190 @@
 
 /* Hover effect for links */
 .nav-link:hover {
-    color: #c5c9e7; /* Lighter shade on hover */
+    color: #715C9B; /* Lighter shade on hover */
 }
+
+
+
+
+/* HERO SECTION */
+/* Hero Section */
+.hero-sec {
+    text-align: center;
+    padding: 0px 0;
+}
+
+.hero-sec img.homepage-img {
+    width: 100%;
+    max-height: 500px; /* Limit image height */
+    object-fit: cover;
+    margin-bottom: 30px;
+}
+
+.hero-sec p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 10px auto;
+    max-width: 800px; /* Limit paragraph width */
+}
+
+.bw-building {
+    width: 80%;
+    height: 450px; 
+    object-fit: cover; 
+    object-position: center; 
+}
+
+
+/* Services Sections */
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd; /* Separate sections visually */
+}
+
+.events-img-homepage,
+.exhibits-img-homepage,
+.classes-img-homepage,
+.members-img-homepage {
+    width: 120px; /* Circular image size */
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.section .content {
+    text-align: left;
+    max-width: 600px;
+}
+
+.section h2 a.btn {
+    font-size: 20px;
+    color: #fff;
+    background-color: #424080;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.section h2 a.btn:hover {
+    background-color: #715C9B;
+}
+
+.section p {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #20201f;
+}
+
+/* Bottom Image */
+
+.homepage-bottom-img {
+    width: 100%;
+    max-height: 500px; /* Limit image height */
+    object-fit: cover;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    clip-path: inset(10% 10% 20% 10%); /* Crop from top, right, bottom, left */
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+/* Footer General Styles */
+.footer {
+    background-color: #20201f; /* Match the dark background */
+    font-family: 'Lato', sans-serif; /* Font for body text */ 
+  }
+  
+  .footer-logo {
+    max-width: 200px; /* Adjust size of logo */
+    margin-bottom: 20px;
+  }
+  
+  .footer-icons a {
+    margin-right: 15px; /* Spacing between icons */
+    font-size: 1.2rem; /* Icon size */
+  }
+  
+  .footer .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+  }
+  
+  .footer p {
+    margin: 10px 0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  
+  /* Middle Column */
+  .footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-link {
+    color: #715C9B; /* Text color for links */
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  .footer-link:hover {
+    color: #4C9173; /* Hover color for links */
+  }
+  
+  /* Right Column */
+  .footer-subtitle {
+    color: #b1afb2; /* Subtitle text color */
+    font-size: 1.1rem;
+    margin-top: 10px;
+  }
+  
+  .footer-subtitle + p {
+    margin-top: 5px;
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .col-md-4 {
+    align-items: center;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer .row {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .footer-icons {
+      justify-content: center;
+      margin-bottom: 15px;
+    }
+  
+    .footer ul {
+      margin-bottom: 20px;
+    }
+  }
+  
+
+
+
+
