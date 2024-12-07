@@ -214,8 +214,19 @@ h5.footer-subtitle {
     object-fit: cover;
 }
 
+/* SERVICES AND EVENTS SECTION */
 
-
+h1.services-and-events-title { 
+    position: absolute; /* Position the text over the image */
+    top: 40%; /* Vertically center */
+    left: 50%; /* Horizontally center */
+    transform: translate(-50%, -50%); /* Fine-tune centering */
+    background-color: #20201f; /* Dark background */
+    color: #769e9e; /* Text color to match the screenshot */
+    font-family: 'Merriweather', serif; /* Font styling */
+    font-size: 68px; /* Font size for the text */
+    padding: 15px 30px; /* Padding around the text */
+    }
 
 
 
