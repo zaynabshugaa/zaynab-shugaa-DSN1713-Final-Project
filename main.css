@@ -3,12 +3,11 @@
 
 /* General Body Font Styles */
 body {
-  font-family: 'Lato', sans-serif; /* Font for body text */
-  font-size: 18px; /* Body text size */
-  font-weight: 400; /* Regular weight */
-  line-height: 1.6; /* Adjust for readability */
-  color: #333; /* Default text color */
-  margin: 0;
+  font-family: 'Lato', sans-serif; 
+  font-size: 18px;
+  font-weight: 400; 
+  line-height: 1.6; 
+  color: #20201F;
   padding: 0;
 }
 
@@ -220,15 +219,24 @@ h1.services-and-events-title {
     position: absolute; /* Position the text over the image */
     top: 40%; /* Vertically center */
     left: 50%; /* Horizontally center */
-    transform: translate(-50%, -50%); /* Fine-tune centering */
-    background-color: #20201f; /* Dark background */
-    color: #769e9e; /* Text color to match the screenshot */
-    font-family: 'Merriweather', serif; /* Font styling */
-    font-size: 68px; /* Font size for the text */
-    padding: 15px 30px; /* Padding around the text */
+    transform: translate(-50%, -50%);
+    background-color: #20201F; 
+    color: #4C9173;
+    font-family: 'Merriweather', serif; 
+    font-size: 68px; 
+    padding: 15px 30px;
     }
 
-
+  .hero-text-sae {
+    background-color: #e6e6f8;
+    padding: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #20201F;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+  }
 
 
 
