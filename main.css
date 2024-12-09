@@ -13,18 +13,18 @@ body {
 
 /* Heading 1 (H1) */
 h1 {
-  font-family: 'Merriweather', serif; /* Font for H1 */
-  font-size: 68px; /* 68pt size */
-  font-weight: 900; /* Black thickness */
-  color: #000; /* Default color for heading */
+  font-family: 'Merriweather', serif; 
+  font-size: 68px; 
+  font-weight: 900; 
+  color: #20201F; 
   margin: 0.5em 0;
 }
 
 /* Heading 2 (H2) */
 h2 {
   font-family: 'Merriweather', serif;
-  font-size: 55px; /* 55pt size */
-  font-weight: 900; /* Black thickness */
+  font-size: 55px; 
+  font-weight: 900; 
   color: #424080;
   margin: 0.5em 0;
 }
@@ -32,17 +32,17 @@ h2 {
 /* Heading 3 (H3) */
 h3 {
   font-family: 'Merriweather', serif;
-  font-size: 44px; /* 44pt size */
-  font-weight: 900; /* Black thickness */
+  font-size: 44px; 
+  font-weight: 900;
   color: #424080;
   margin: 0.5em 0;
 }
 
 /* Heading 4 (H4) */
 h4 {
-  font-family: 'Lato', sans-serif; /* Font for H4 */
-  font-size: 35px; /* 35pt size */
-  font-weight: 900; /* Black thickness */
+  font-family: 'Lato', sans-serif; 
+  font-size: 35px; 
+  font-weight: 900; 
   color: #715C9B;
   margin: 0.5em 0;
 }
@@ -50,8 +50,8 @@ h4 {
 /* Heading 5 (H5) */
 h5 {
   font-family: 'Lato', sans-serif;
-  font-size: 29px; /* 29pt size */
-  font-weight: 900; /* Black thickness */
+  font-size: 29px; 
+  font-weight: 900;
   color: #715C9B;
   margin: 0.5em 0;
 }
@@ -59,8 +59,8 @@ h5 {
 /* Paragraphs (Body Text) */
 p {
   font-family: 'Lato', sans-serif;
-  font-size: 18px; /* 18pt size */
-  font-weight: 400; /* Regular weight */
+  font-size: 18px; 
+  font-weight: 400; 
   color: #20201F;
   line-height: 1.6;
   margin: 0.5em 0;
@@ -80,7 +80,7 @@ h5.footer-subtitle {
 /* NAV BAR */ 
 /* General styles for the navbar */
 .navbar {
-    background-color: #20201f; /* Dark background color */
+    background-color: #20201f;
     padding: 15px 30px;
     display: flex;
     justify-content: space-between;
@@ -96,15 +96,15 @@ h5.footer-subtitle {
 /* Container for the nav links */
 .navbar-nav {
     display: flex;
-    flex-direction: row; /* Aligns links horizontally */
-    gap: 30px; /* Space between links */
+    flex-direction: row;
+    gap: 30px; 
     text-align: right;
-    margin-left: auto; /* Pushes the navbar-nav to the right */
+    margin-left: auto; 
 }
 
 /* Styling each navigation link */
 .nav-link {
-    color: #b1afb2; /* Soft purple color for links */
+    color: #b1afb2;
     font-family: Arial, sans-serif;
     font-size: 18px;
     font-weight: bold;
@@ -114,19 +114,34 @@ h5.footer-subtitle {
 
 /* Active link styling */
 .nav-link.active {
-    color: #b1afb2; /* Ensures active link is the same color */
+    color: #b1afb2; 
 }
 
 /* Hover effect for links */
 .nav-link:hover {
-    color: #715C9B; /* Lighter shade on hover */
+    color: #715C9B;
 }
 
 
 
 
 /* HERO SECTION */
-/* Hero Section */
+
+@media (max-width: 768px) {
+  .hero-content {
+      flex-direction: column; /* Stack sections on smaller screens */
+      gap: 10px;
+  }
+
+  .about-us,
+  .mission-statement {
+      max-width: 100%; /* Make them take full width */
+  }
+}
+
+
+
+
 .hero-sec {
     text-align: center;
     padding: 0px 0;
@@ -134,17 +149,53 @@ h5.footer-subtitle {
 
 .hero-sec img.homepage-img {
     width: 100%;
-    max-height: 500px; /* Limit image height */
+    max-height: 500px; 
     object-fit: cover;
     margin-bottom: 30px;
 }
+.hero-content {
+  display: flex; /* Enable flexbox for the parent container */
+  justify-content: space-between; /* Add space between the two sections */
+  align-items: center; /* Center-align the content vertically */
+  gap: 20px; /* Adjust spacing between the two sections */
+  padding: 20px;
+  text-align: center; /* Center-align text within each section */
+}
+
+.about-us,
+.mission-statement {
+  flex: 1; /* Ensure both sections take up equal width */
+  padding: 10px; /* Optional padding inside each section */
+  max-width: 50%; /* Restrict each section to half the container */
+}
+
+.about-us,
+.mission-statement {
+  flex: 1; /* Ensure both sections take up equal width */
+  padding: 10px; /* Optional padding inside each section */
+  max-width: 50%; /* Restrict each section to half the container */
+}
+
+.hero-sec h5 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #715C9B;
+  margin-bottom: 10px;
+}
 
 .hero-sec p {
-    font-size: 16px;
-    line-height: 1.8;
-    margin: 10px auto;
-    max-width: 800px; /* Limit paragraph width */
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #20201F;
 }
+
+/* Optional - Prevent text overflow if content grows */
+.hero-content {
+  flex-wrap: nowrap; /* Ensure content doesn't wrap to the next line */
+  overflow: hidden; /* Hide any overflowing content */
+}
+
+
 
 .bw-building {
     width: 80%;
@@ -154,8 +205,7 @@ h5.footer-subtitle {
 }
 
 
-/* Services Sections */
-
+/* SERVICES SECTION */
 .section {
     display: flex;
     align-items: center;
@@ -203,7 +253,6 @@ h5.footer-subtitle {
 }
 
 /* Bottom Image */
-
 .homepage-bottom-img {
     width: 100%;
     max-height: 500px;
@@ -219,7 +268,6 @@ h5.footer-subtitle {
 
 
 /* SERVICES AND EVENTS SECTION */
-
 @media (max-width: 768px) { 
   .sae-title-container h1 {
     font-size: 2rem; 
@@ -275,7 +323,7 @@ h5.footer-subtitle {
   /* Community Section Styles */
 .community-section {
   position: relative;
-  padding: 3rem 0; /* Add padding for spacing */
+  padding: 3rem 0; 
   text-align: center;
 }
 
@@ -294,34 +342,55 @@ h5.footer-subtitle {
   text-transform: uppercase;
   color:#4C9173;
   background-color:#20201f;
-  padding: 1.5rem 6rem; /* Padding around the text */
+  padding: 1.5rem 6rem;
 }
 
 .text-container {
   background-color: #e6e6f8;
   padding: 2rem;
   color: #20201f;
-  max-width: 1300px; /* Constrain width */
-  margin: 2rem auto; /* Center the container */
-  display: flex; /* Use Flexbox to align items side-by-side */
-  gap: 2rem; /* Add space between the two paragraphs */
-  justify-content: space-between; /* Spread the paragraphs evenly */
-  align-items: flex-start; /* Align the paragraphs at the top */
+  max-width: 1300px; 
+  margin: 2rem auto; 
+  display: flex; 
+  gap: 2rem; 
+  justify-content: space-between; 
+  align-items: flex-start; 
 }
 
 .text-container p {
-  text-align: left; /* Left-align the text */
-  margin: 0; /* Remove any default margins */
-  flex: 1; /* Ensure both paragraphs take equal width */
+  text-align: left; 
+  margin: 0; 
+  flex: 1; 
 }
 
+/* Showcase Your Art Section Styles */
+.showcase-section {
+  text-align: center;
+}
+
+.showcase-image {
+  width: 100%;
+  max-width: 100%;
+}
+
+.showcase-title {
+  padding: 1rem 2rem;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.showcase-section p {
+  text-align: left;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
 
 
 
 
 
 /* SUPPORT US */
-
   .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -332,7 +401,7 @@ h5.footer-subtitle {
     text-align: center;
   }
   
-  /* Header Section */
+  /* HEADER SECTION */
   .support-header {
     display: flex;
     justify-content: center;
@@ -343,7 +412,7 @@ h5.footer-subtitle {
   }
   
   .support-header .overlay {
-    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    background: rgba(0, 0, 0, 0.5); 
     z-index: 1;
   }
   
