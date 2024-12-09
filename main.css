@@ -77,51 +77,108 @@ h5.footer-subtitle {
 
 
 
-/* NAV BAR */ 
-/* General styles for the navbar */
+/* NAV BAR */
+
+/* General Styles for the Navbar */
 .navbar {
-    background-color: #20201f;
-    padding: 15px 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background-color: #20201f;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between; /* Logo on the left, hamburger on the right */
+  align-items: center; /* Vertically center items */
 }
 
-/* Logo styling */
+/* Navbar Container */
+.nav-container {
+  width: 100%; /* Full-width container */
+  display: flex;
+  align-items: center; /* Center contents vertically */
+}
+
+/* Logo Styling */
 .nav-logo {
-    height: 40pt;
-    align-items: right;
+  height: 40px; /* Logo height */
+  margin: 0; /* No extra margins */
+  display: block;
 }
 
-/* Container for the nav links */
+/* Navigation Links Container */
 .navbar-nav {
-    display: flex;
-    flex-direction: row;
-    gap: 30px; 
-    text-align: right;
-    margin-left: auto; 
+  display: flex;
+  flex-direction: row; /* Horizontal layout */
+  margin-left: auto; /* Push links to the right */
+  gap: 20px; /* Space between links */
 }
 
-/* Styling each navigation link */
+/* Styling Individual Navigation Links */
 .nav-link {
-    color: #b1afb2;
-    font-family: Arial, sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    text-decoration: none;
-    text-transform: uppercase;
+  color: #b1afb2;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
-/* Active link styling */
-.nav-link.active {
-    color: #b1afb2; 
-}
-
-/* Hover effect for links */
 .nav-link:hover {
-    color: #715C9B;
+  color: #715C9B; /* Hover color */
 }
 
+/* Active Link Styling */
+.nav-link.active {
+  color: #b1afb2;
+}
+
+/* Hamburger Menu Button */
+.hamburger {
+  display: none; /* Hidden by default */
+  font-size: 24px; /* Font size for the icon */
+  background: none; /* Remove background */
+  border: none; /* Remove border */
+  color: #4C9173; /* Green color for the icon */
+  cursor: pointer; /* Change cursor to pointer */
+  position: absolute; /* Position it independently */
+  top: 50%; /* Vertically center it */
+  right: 20px; /* Position it to the right */
+  transform: translateY(-50%); /* Adjust for vertical centering */
+}
+
+/* Responsive Design for Smaller Screens */
+
+/* Medium Screens (Max Width: 768px) */
+@media (max-width: 768px) {
+  .navbar {
+      padding: 10px 20px; /* Adjust padding for smaller screens */
+  }
+
+  .nav-link {
+      font-size: 14px; /* Smaller font size for links */
+  }
+
+  .nav-logo {
+      height: 30px; /* Scale down the logo */
+  }
+
+  .hamburger {
+      display: block; /* Show hamburger button on smaller screens */
+  }
+
+  .navbar-nav {
+      display: none; /* Hide navigation links initially */
+      flex-direction: column; /* Vertical layout */
+      gap: 10px; /* Space between links */
+      background-color: #20201f;
+      position: absolute;
+      top: 60px; /* Position below navbar */
+      right: 0;
+      padding: 15px;
+      border-radius: 5px;
+  }
+
+  .navbar-nav.show {
+      display: flex; /* Show links when toggled */
+  }
+}
 
 
 
