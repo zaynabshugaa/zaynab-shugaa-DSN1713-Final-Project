@@ -206,25 +206,59 @@ h5.footer-subtitle {
 
 .homepage-bottom-img {
     width: 100%;
-    max-height: 500px; /* Limit image height */
+    max-height: 500px;
     object-fit: cover;
     margin-bottom: 20px;
     margin-top: 50px;
-    clip-path: inset(10% 10% 20% 10%); /* Crop from top, right, bottom, left */
+    clip-path: inset(10% 10% 20% 10%);
     object-fit: cover;
 }
 
+
+
+
+
 /* SERVICES AND EVENTS SECTION */
-h1.services-and-events-title {
+
+@media (max-width: 768px) { 
+  .sae-title-container h1 {
+    font-size: 2rem; 
+    padding: 0.5rem 1rem; 
+  }
+
+  .sae-title-container {
+    height: 300px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .sae-title-container h1 {
+    font-size: 1.5rem; 
+    padding: 0.25rem 0.5rem; 
+  }
+
+  .sae-title-container {
+    height: 250px; 
+  }
+}
+
+
+.sae-title-container {
   position: relative;
   background-image: url('images/About\ us\ img\ +\ Our\ story.webp');
   background-size: cover;
   background-position: center;
-  height: 500px; 
+  height: 400px;
   display: flex;
   align-items: center;
   justify-content: center;
-  
+}
+
+.sae-title-container h1 {
+  color: #4C9173;
+  background-color: #20201F;
+  padding: 1rem 2rem;
+  text-align: center;
 }
 
   .hero-text-sae {
