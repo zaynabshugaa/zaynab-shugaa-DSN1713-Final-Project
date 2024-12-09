@@ -155,13 +155,14 @@ h5.footer-subtitle {
 
 
 /* Services Sections */
+
 .section {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 30px 0;
     padding: 20px 0;
-    border-bottom: 1px solid #ddd; /* Separate sections visually */
+    border-bottom: 1px solid #ddd; 
 }
 
 .events-img-homepage,
@@ -214,18 +215,17 @@ h5.footer-subtitle {
 }
 
 /* SERVICES AND EVENTS SECTION */
-
-h1.services-and-events-title { 
-    position: absolute; /* Position the text over the image */
-    top: 40%; /* Vertically center */
-    left: 50%; /* Horizontally center */
-    transform: translate(-50%, -50%);
-    background-color: #20201F; 
-    color: #4C9173;
-    font-family: 'Merriweather', serif; 
-    font-size: 68px; 
-    padding: 15px 30px;
-    }
+h1.services-and-events-title {
+  position: relative;
+  background-image: url('images/About\ us\ img\ +\ Our\ story.webp');
+  background-size: cover;
+  background-position: center;
+  height: 500px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
 
   .hero-text-sae {
     background-color: #e6e6f8;
@@ -238,7 +238,171 @@ h1.services-and-events-title {
     text-align: center;
   }
 
+  /* Community Section Styles */
+.community-section {
+  position: relative;
+  padding: 3rem 0; /* Add padding for spacing */
+  text-align: center;
+}
 
+.title-container {
+  position: relative;
+  background-image: url('images/Community\ Image.webp');
+  background-size: cover;
+  background-position: center;
+  height: 400px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.community-title {
+  text-transform: uppercase;
+  color:#4C9173;
+  background-color:#20201f;
+  padding: 1.5rem 6rem; /* Padding around the text */
+}
+
+.text-container {
+  background-color: #e6e6f8;
+  padding: 2rem;
+  color: #20201f;
+  max-width: 1300px; /* Constrain width */
+  margin: 2rem auto; /* Center the container */
+  display: flex; /* Use Flexbox to align items side-by-side */
+  gap: 2rem; /* Add space between the two paragraphs */
+  justify-content: space-between; /* Spread the paragraphs evenly */
+  align-items: flex-start; /* Align the paragraphs at the top */
+}
+
+.text-container p {
+  text-align: left; /* Left-align the text */
+  margin: 0; /* Remove any default margins */
+  flex: 1; /* Ensure both paragraphs take equal width */
+}
+
+
+
+
+
+
+/* SUPPORT US */
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  /* Header Section */
+  .support-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    color: #fff;
+  }
+  
+  .support-header .overlay {
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1;
+  }
+  
+  .support-header h1 {
+    z-index: 2;
+    color:#4C9173 ;
+  }
+  
+  /* Ways to Support Section */
+  .ways-to-support {
+    padding: 40px 15px;
+    background-color: #B5CFD1;
+  }
+  
+  .ways-to-support h4 {
+    margin-bottom: 15px;
+  }
+  
+  .ways-to-support p {
+    font-size: 16px;
+    color:#424242;
+  }
+  
+  /* Support Options Section */
+  .support-options .row {
+    margin-bottom: 40px; /* Space between rows */
+  }
+
+  .support-options img {
+    width: 100%;
+  }
+  
+  .donate-title, .join-us-title {
+    margin-bottom: 15px;
+  }
+  
+  .support-options p {
+    color:#20201F;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    padding: 10px 30px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+  }
+  
+  a.btn-dark {
+    color: #4C9173;
+  }
+
+  .btn-dark {
+    background-color:#20201F;
+    border-radi: 5px;
+  }
+  
+  .btn-dark:hover {
+    background-color:#424080;
+  }
+  
+  /* Bottom Section */
+  .bottom-section-su {
+    padding: 30px 15px;
+    background-color: #B5CFD1;
+  }
+  
+  .bottom-section-su p {
+    font-size: 16px;
+    color:#20201F;
+    margin-bottom: 10px;
+    line-height: 1.8;
+  }
+  
+  .bottom-section-su .col-md-6 {
+    margin-bottom: 20px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .support-options .row {
+      flex-direction: column;
+    }
+  
+    .support-options img {
+      margin-bottom: 20px;
+    }
+  }
+
+
+  
 
 
 /* FOOTER */
