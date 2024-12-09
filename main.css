@@ -505,18 +505,18 @@ h5.footer-subtitle {
 /* FOOTER */
 /* Footer General Styles */
 .footer {
-    background-color: #20201f; /* Match the dark background */
-    font-family: 'Lato', sans-serif; /* Font for body text */ 
+    background-color: #20201f;
+    font-family: 'Lato', sans-serif;  
   }
   
   .footer-logo {
-    max-width: 200px; /* Adjust size of logo */
+    max-width: 200px;
     margin-bottom: 20px;
   }
   
   .footer-icons a {
-    margin-right: 15px; /* Spacing between icons */
-    font-size: 1.2rem; /* Icon size */
+    margin-right: 15px;
+    font-size: 1.2rem;
   }
   
   .footer .row {
@@ -546,12 +546,12 @@ h5.footer-subtitle {
   }
   
   .footer-link:hover {
-    color: #4C9173; /* Hover color for links */
+    color: #4C9173; 
   }
   
   /* Right Column */
   .footer-subtitle {
-    color: #b1afb2; /* Subtitle text color */
+    color: #b1afb2;
     font-size: 1.1rem;
     margin-top: 10px;
   }
@@ -560,6 +560,10 @@ h5.footer-subtitle {
     margin-top: 5px;
     font-size: 0.9rem;
     line-height: 1.6;
+  }
+
+  .mt-3 {
+    color:#4C9173;
   }
 
   .col-md-4 {
