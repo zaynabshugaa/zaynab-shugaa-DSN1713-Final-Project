@@ -231,26 +231,20 @@ h5.footer-subtitle {
     max-width: 600px;
 }
 
-.section h2 a.btn {
+.section h4 a.btn {
     font-size: 20px;
     color: #fff;
-    background-color: #424080;
+    background-color:#715C9B;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
 }
 
-.section h2 a.btn:hover {
-    background-color: #715C9B;
+.section h4 a.btn:hover {
+    background-color:#424080;
 }
 
-.section p {
-    margin-top: 10px;
-    font-size: 14px;
-    line-height: 1.6;
-    color: #20201f;
-}
 
 /* Bottom Image */
 .homepage-bottom-img {
